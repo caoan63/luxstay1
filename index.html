@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/05a9bb444c.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Luxstay - Đặt Phòng homestay nhanh chóng</title>
+</head>
+<body>
+    <div id="header">
+        <div class="header--left-side">
+            <a href="/" class="header__logo-link">
+                <img src="./assets/img/logo/primary-logo.png" alt="" class="header__logo-img">
+            </a>
+    
+            <div class="header__search-wrap">
+                <!-- HEADER SEARCH -->
+                <div class="header__search header__selection">
+                    <i class="header__search-icon fas fa-search"></i>
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm">
+                </div>
+                <!-- HEADER BOOKING -->
+                <div class="header__booking">
+                    <i class="header__booking-icon far fa-calendar"></i>
+                    <button class="header__booking-title">Ngày</button>
+                    <!-- BOOKING TABLE -->
+                    <div class="booking-wrapper">
+                        <div class="booking-heading">
+                            <button class="booking-btn--left">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="booking-btn--right">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="booking-body">
+                            <div class="booking-table-wrap">
+                                <h3 class="booking-table-heading">November 2021</h3>
+                                <table class="booking-table">
+                                    <tr class="booking-table-row">
+                                        <th class="booking-table-row-heading">Mon</th>
+                                        <th class="booking-table-row-heading">Tue</th>
+                                        <th class="booking-table-row-heading">Wed</th>
+                                        <th class="booking-table-row-heading">Thu</th>
+                                        <th class="booking-table-row-heading">Fri</th>
+                                        <th class="booking-table-row-heading">Sat</th>
+                                        <th class="booking-table-row-heading">Sun</th>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data">1</td>
+                                        <td class="booking-table-data">2</td>
+                                        <td class="booking-table-data">3</td>
+                                        <td class="booking-table-data">4</td>
+                                        <td class="booking-table-data">5</td>
+                                        <td class="booking-table-data">6</td>
+                                        <td class="booking-table-data">7</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data">8</td>
+                                        <td class="booking-table-data">9</td>
+                                        <td class="booking-table-data">10</td>
+                                        <td class="booking-table-data">11</td>
+                                        <td class="booking-table-data">12</td>
+                                        <td class="booking-table-data">13</td>
+                                        <td class="booking-table-data">14</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data">15</td>
+                                        <td class="booking-table-data">16</td>
+                                        <td class="booking-table-data table--available">17</td>
+                                        <td class="booking-table-data table--available">18</td>
+                                        <td class="booking-table-data table--available">19</td>
+                                        <td class="booking-table-data table--available">20</td>
+                                        <td class="booking-table-data table--available">21</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">22</td>
+                                        <td class="booking-table-data table--available">23</td>
+                                        <td class="booking-table-data table--available">24</td>
+                                        <td class="booking-table-data table--available">25</td>
+                                        <td class="booking-table-data table--available">26</td>
+                                        <td class="booking-table-data table--available">27</td>
+                                        <td class="booking-table-data table--available">28</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">29</td>
+                                        <td class="booking-table-data table--available">30</td>
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--null"></td>
+                                    </tr>
+                                </table>
+                            </div> <!-- Booking table wrap END -->
+                            <div class="booking-table-wrap">
+                                <h3 class="booking-table-heading">December 2021</h3>
+                                <table class="booking-table">
+                                    <tr class="booking-table-row">
+                                        <th class="booking-table-row-heading">Mon</th>
+                                        <th class="booking-table-row-heading">Tue</th>
+                                        <th class="booking-table-row-heading">Wed</th>
+                                        <th class="booking-table-row-heading">Thu</th>
+                                        <th class="booking-table-row-heading">Fri</th>
+                                        <th class="booking-table-row-heading">Sat</th>
+                                        <th class="booking-table-row-heading">Sun</th>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--null"></td>
+                                        <td class="booking-table-data table--available">1</td>
+                                        <td class="booking-table-data table--available">2</td>
+                                        <td class="booking-table-data table--available">3</td>
+                                        <td class="booking-table-data table--available">4</td>
+                                        <td class="booking-table-data table--available">5</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">6</td>
+                                        <td class="booking-table-data table--available">7</td>
+                                        <td class="booking-table-data table--available">8</td>
+                                        <td class="booking-table-data table--available">9</td>
+                                        <td class="booking-table-data table--available">10</td>
+                                        <td class="booking-table-data table--available">11</td>
+                                        <td class="booking-table-data table--available">12</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">13</td>
+                                        <td class="booking-table-data table--available">14</td>
+                                        <td class="booking-table-data table--available">15</td>
+                                        <td class="booking-table-data table--available">16</td>
+                                        <td class="booking-table-data table--available">17</td>
+                                        <td class="booking-table-data table--available">18</td>
+                                        <td class="booking-table-data table--available">19</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">20</td>
+                                        <td class="booking-table-data table--available">21</td>
+                                        <td class="booking-table-data table--available">22</td>
+                                        <td class="booking-table-data table--available">23</td>
+                                        <td class="booking-table-data table--available">24</td>
+                                        <td class="booking-table-data table--available">25</td>
+                                        <td class="booking-table-data table--available">26</td>
+                                    </tr>
+                                    <tr class="booking-table-row">
+                                        <td class="booking-table-data table--available">27</td>
+                                        <td class="booking-table-data table--available">28</td> 
+                                        <td class="booking-table-data table--available">29</td> 
+                                        <td class="booking-table-data table--available">30</td> 
+                                        <td class="booking-table-data table--available">31</td> 
+                                    </tr>
+                                </table>
+                            </div> <!-- Booking table wrap END -->
+                        </div> <!-- Booking body END -->
+                        <div class="booking-footer">
+                            <button class="booking-footer-btn booking-btn--hide">Xoá</button>
+                            <button class="booking-footer-btn">Áp dụng</button>
+                        </div>
+                    </div> <!-- Booking wrapper END-->
+                </div>
+                <!-- HEADER GUEST INFO -->
+                <a href="#" class="header__guestInfo">
+                    <i class="header__guestInfo-icon fas fa-user"></i>
+                    <span class="header__guestInfo-title">Số khách</span>
+                    <!-- guestInfo wrap -->
+                    <div class="guestInfo-wrap">
+                        <div class="guestInfo-item">
+                            <div class="guestInfo-name">
+                                <span class="guestInfo-title">Người lớn</span>
+                                <span class="guestInfo-desrib"></span>
+                            </div>
+                            <div class="guestInfo-quantity">
+                                <button class="guestInfo-btn--sub">
+                                    <i class="guestInfo-quantity-icon fas fa-minus"></i>
+                                </button>
+                                <span class="guestInfo-quantity-value">0</span>
+                                <button class="guestInfo-btn--add">
+                                    <i class="guestInfo-quantity-icon fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div> <!-- guestInfo-item END -->
+                        <div class="guestInfo-item">
+                            <div class="guestInfo-name">
+                                <span class="guestInfo-title">Trẻ em</span>
+                                <span class="guestInfo-desrib">Tuổi từ 2-12</span>
+                            </div>
+                            <div class="guestInfo-quantity">
+                                <button class="guestInfo-btn--sub">
+                                    <i class="guestInfo-quantity-icon fas fa-minus"></i>
+                                </button>
+                                <span class="guestInfo-quantity-value">0</span>
+                                <button class="guestInfo-btn--add">
+                                    <i class="guestInfo-quantity-icon fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div> <!-- guestInfo-item END -->
+                        <div class="guestInfo-item">
+                            <div class="guestInfo-name">
+                                <span class="guestInfo-title">Trẻ sơ sinh</span>
+                                <span class="guestInfo-desrib">Dưới 2 tuổi</span>
+                            </div>
+                            <div class="guestInfo-quantity">
+                                <button class="guestInfo-btn--sub">
+                                    <i class="guestInfo-quantity-icon fas fa-minus"></i>
+                                </button>
+                                <span class="guestInfo-quantity-value">0</span>
+                                <button class="guestInfo-btn--add">
+                                    <i class="guestInfo-quantity-icon fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div> <!-- guestInfo-item END -->
+                        <div class="guestInfo-footer">
+                            <button class="guestInfo-footer-btn guestInfo-btn--hide">Xoá</button>
+                            <button class="guestInfo-footer-btn">Áp dụng</button>
+                        </div>
+                    </div> <!-- guestInfo-wrap end-->
+                </a> <!-- header__guestInfo END-->
+
+                <!-- HEADER SEARCH BUTTON -->
+                <a href="#" class="header__searh-btn">
+                    <i class="header__searh-btn-icon fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="header--right-side">
+            <ul class="header__nav">
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Guide</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Host</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Đăng ký</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="" class="header__nav-item-link">Đăng nhập</a>
+                </li>
+            </ul>
+            <span class="header__moneyConvert">
+                <img src="./assets/img/logo/vietnam-flag.png" alt="" class="header__moneyConvert-img">
+                <span class="header__moneyConvert-title">VND</span>
+                <i class="header__moneyConvert-icon fas fa-angle-down"></i>
+                <!-- moneyConvert -->
+                <div class="moneyConvert-wrap">
+                    <div class="moneyConvert-languages">
+                        <div class="moneyConvert-languages-item">
+                            <img src="./assets/img/logo/vietnam-flag.png" alt="vietnam-flag" class="moneyConvert-languages-img">
+                            <span class="moneyConvert-languages-name">Tiếng Việt</span>
+                            <i class="moneyConvert-icon fas fa-check"></i>
+                        </div>
+                        <div class="moneyConvert-languages-item">
+                            <img src="./assets/img/logo/england-logo.png" alt="english-flag" class="moneyConvert-languages-img">
+                            <span class="moneyConvert-languages-name">English</span>
+                            <i class="moneyConvert-icon icon--disabled fas fa-check"></i>
+                        </div>
+                        <div class="moneyConvert-languages-item">
+                            <img src="./assets/img/logo/korean-flag.png" alt="korean-flag" class="moneyConvert-languages-img">
+                            <span class="moneyConvert-languages-name">Korean</span>
+                            <i class="moneyConvert-icon icon--disabled fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="moneyConvert-moneyChange">
+                        <div class="moneyConvert-moneyChange-item">
+                            <h2 class="moneyConvert-moneyChange-Type">VND</h2>
+                            <span class="moneyConvert-moneyChange-name">Việt Nam Đồng</span>
+                            <i class="moneyConvert-icon fas fa-check"></i>
+                        </div>
+                        <div class="moneyConvert-moneyChange-item">
+                            <h2 class="moneyConvert-moneyChange-Type">USD</h2>
+                            <span class="moneyConvert-moneyChange-name">United Stades Dollar</span>
+                            <i class="moneyConvert-icon icon--disabled  fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+
+        
+    </div>
+
+    <div id="slider">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="slider__wrapper">
+                    <a href="#" class="slider__item-link">
+                        <img src="./assets/img/slider/slider_1.png" alt="" class="slider__img">
+                    </a>
+                    <div class="slider__button-wrapper">
+                        <button class="slider__button slider__button--current"></button>
+                        <button class="slider__button"></button>
+                        <button class="slider__button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="grid">
+            <div class="grid__row">
+                <!-- Introduce -->
+                <div class="content__item">
+                    <h3 class="content__heading content__heading--primary">Chào mừng đến với Luxstay!</h3>
+                    <p class="content__info">
+                        Đặt chỗ ở, homestay, cho thuê xe, trải nghiệm và nhiều hơn nữa trên Luxstay
+                    </p>
+                    <p class="content__info">
+                        <a href="#" class="content__info-link">Đăng nhập</a> 
+                        hoặc
+                        <a href="#" class="content__info-link">Đăng ký</a>
+                        để trải nghiệm !
+                    </p>
+                </div>
+
+                <!-- Place -->
+                <div id="place" class="content__item">
+                    <h3 class="content__heading">Địa điểm nổi bậc</h3>
+                    <p class="content__info">
+                        Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn
+                    </p>
+                    <!-- Place Wrapper -->
+                    <div class="content__wrapper">
+                        <div class="grid__row">
+                            <div class="grid__column-1-5">
+                                <div class="place__item">
+                                    <a href="" class="place__item-link">
+                                        <img src="./assets/img/place/place1.png" alt="" class="place__img">
+                                        <div class="place__info">
+                                            <h2 class="place__name">Hà Nội</h2>
+                                            <p class="place__describ">
+                                                <span class="place__describ-number">2659</span>
+                                                Chỗ ở
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <div class="place__item">
+                                    <a href="" class="place__item-link">
+                                        <img src="./assets/img/place/place2.png" alt="" class="place__img">
+                                        <div class="place__info">
+                                            <h2 class="place__name">TP. Hồ Chính Minh</h2>
+                                            <p class="place__describ">
+                                                <span class="place__describ-number">2242</span>
+                                                Chỗ ở
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <div class="place__item">
+                                    <a href="" class="place__item-link">
+                                        <img src="./assets/img/place/place3.png" alt="" class="place__img">
+                                        <div class="place__info">
+                                            <h2 class="place__name">Vũng Tàu</h2>
+                                            <p class="place__describ">
+                                                <span class="place__describ-number">549</span>
+                                                Chỗ ở
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <div class="place__item">
+                                    <a href="" class="place__item-link">
+                                        <img src="./assets/img/place/place4.png" alt="" class="place__img">
+                                        <div class="place__info">
+                                            <h2 class="place__name">Đà Lạt</h2>
+                                            <p class="place__describ">
+                                                <span class="place__describ-number">1488</span>
+                                                Chỗ ở
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <div class="place__item">
+                                    <a href="" class="place__item-link">
+                                        <img src="./assets/img/place/place5.png" alt="" class="place__img">
+                                        <div class="place__info">
+                                            <h2 class="place__name">Đà Nẵng</h2>
+                                            <p class="place__describ">
+                                                <span class="place__describ-number">897</span>
+                                                Chỗ ở
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- grid__row END-->
+                        <div class="wrapper__btns">
+                            <button class="wrapper__btn wrapper__btn--left">
+                                <i class="wrapper__btn-icon fas fa-angle-left"></i>
+                            </button>
+                            <button class="wrapper__btn wrapper__btn--right wrapper__btn--available">
+                                <i class="wrapper__btn-icon fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div> <!-- PLACE wrapper END-->
+                </div>
+
+                <div id="promotion" class="content__item">
+                    <h3 class="content__heading">Ưu đãi độc quyền</h3>
+                    <div class="content__sub-heading">
+                        <p class="content__info">
+                            Chỉ có tại Luxstay, hấp dẫn và hữu hạn, book ngay!
+                        </p>
+                        <a href="#" class="content__more-btn">Xem thêm</a>
+                    </div>
+                    <!-- Promotion wrapper -->
+                    <div class="content__wrapper">
+                        <div class="grid__row">
+                            <div class="grid__column-1-3">
+                                <a href="#" class="promotion__item-link">
+                                    <img src="./assets/img/promotion/promotion1.jpg" alt="" class="promotion__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-3">
+                                <a href="#" class="promotion__item-link">
+                                    <img src="./assets/img/promotion/promotion2.jpg" alt="" class="promotion__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-3">
+                                <a href="#" class="promotion__item-link">
+                                    <img src="./assets/img/promotion/promotion3.jpg" alt="" class="promotion__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="suggestion" class="content__item">
+                    <h3 class="content__heading">Gợi ý từ Luxstay</h3>
+                    <p class="content__info">
+                        Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
+                    </p>
+                    <!-- Place Suggestions wrapper -->
+                    <div class="content__wrapper">
+                        <div class="grid__row">
+                            <div class="grid__column-1-4">
+                                <a href="#" class="suggestion__item-link">
+                                    <img src="./assets/img/suggestion/suggestion1.jpg" alt="" class="suggestion__img">
+                                    <div class="suggestion__item-info">
+                                        <h3 class="suggestion__item-name">Vi vu ngoại thành Hà Nội</h3>
+                                        <p class="suggestion__item-describ">Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà Nội</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-1-4">
+                                <a href="#" class="suggestion__item-link">
+                                    <img src="./assets/img/suggestion/suggestion2.jpg" alt="" class="suggestion__img">
+                                    <div class="suggestion__item-info">
+                                        <h3 class="suggestion__item-name">Vũng Tàu Biệt thự hồ bơi</h3>
+                                        <p class="suggestion__item-describ">Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn tại Vũng Tàu</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-1-4">
+                                <a href="#" class="suggestion__item-link">
+                                    <img src="./assets/img/suggestion/suggestion3.jpg" alt="" class="suggestion__img">
+                                    <div class="suggestion__item-info">
+                                        <h3 class="suggestion__item-name">Hà Nội nội thành lãng mạn</h3>
+                                        <p class="suggestion__item-describ">Không gian lãng mạn dành cho cặp đôi tại trung tâm Hà Nội</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid__column-1-4">
+                                <a href="#" class="suggestion__item-link">
+                                    <img src="./assets/img/suggestion/suggestion4.jpg" alt="" class="suggestion__img">
+                                    <div class="suggestion__item-info">
+                                        <h3 class="suggestion__item-name">Sài Gòn cần là có ngay</h3>
+                                        <p class="suggestion__item-describ">Những căn homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh chóng</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="wrapper__btns">
+                                <button class="wrapper__btn wrapper__btn--left">
+                                    <i class="wrapper__btn-icon fas fa-angle-left"></i>
+                                </button>
+                                <button class="wrapper__btn wrapper__btn--right wrapper__btn--available">
+                                    <i class="wrapper__btn-icon fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="explore" class="content__item">
+                    <h3 class="content__heading">Gợi ý khám phá</h3>
+                    <p class="content__info">
+                        Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên
+                    </p>
+                    <!-- Explore wrapper -->
+                    <div class="content__wrapper">
+                        <div class="grid__row">
+                            <div class="grid__column-1-3">
+                                <div class="explore__item">
+                                    <a href="#" class="explore__item-link">
+                                        <img src="./assets/img/explore/explore1.jpg" alt="" class="explore__img">
+                                        <div class="explore__title">5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du lịch Anh</div>
+                                    </a>
+                                    <a href="#" class="explore__link-tag">Thông tin homestay</a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-3">
+                                <div class="explore__item">
+                                    <a href="#" class="explore__item-link">
+                                        <img src="./assets/img/explore/explore2.jpg" alt="" class="explore__img">
+                                        <div class="explore__title">Du lịch Cần Thơ nhất định phải ghé thăm những địa điểm này</div>
+                                    </a>
+                                    <a href="#" class="explore__link-tag">Thông tin homestay</a>
+                                </div>
+                            </div>
+                            <div class="grid__column-1-3">
+                                <div class="explore__item">
+                                    <a href="#" class="explore__item-link">
+                                        <img src="./assets/img/explore/explore3.jpg" alt="" class="explore__img">
+                                        <div class="explore__title">Tuần lễ “Tôi yêu bánh mì Sài Gòn” chính thức diễn ra từ ngày 24/3</div>
+                                    </a>
+                                    <a href="#" class="explore__link-tag">TP. Hồ Chí Minh</a>
+                                </div>
+                            </div>
+                            <div class="wrapper__btns">
+                                <button class="wrapper__btn wrapper__btn--left">
+                                    <i class="wrapper__btn-icon fas fa-angle-left"></i>
+                                </button>
+                                <button class="wrapper__btn wrapper__btn--right wrapper__btn--available">
+                                    <i class="wrapper__btn-icon fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="using" class="content__item">
+                    <h3 class="content__heading">Hướng dẫn sử dụng</h3>
+                    <p class="content__info">
+                        Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
+                    </p>
+                    <!-- Promotion wrapper -->
+                    <div class="content__wrapper">
+                        <div class="grid__row">
+                            <div class="grid__column-1-5">
+                                <a href="#" class="using__item-link">
+                                    <img src="" alt="" class="using__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <a href="#" class="using__item-link">
+                                    <img src="" alt="" class="using__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <a href="#" class="using__item-link">
+                                    <img src="" alt="" class="using__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <a href="#" class="using__item-link">
+                                    <img src="" alt="" class="using__img">
+                                </a>
+                            </div>
+                            <div class="grid__column-1-5">
+                                <a href="#" class="using__item-link">
+                                    <img src="" alt="" class="using__img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__download">
+                    <div class="grid__row">
+                        <div class="grid__column-1-2">
+                            <img src="./assets/img/content_download/download_logo.png" alt="" class="content__download-heading-img">
+                            <h1 class="content__download-heading">Tìm kiếm chỗ ở giá tốt nhất</h1>
+                            <p class="content__download-info">Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng chúng tôi, bạn có những chuyến đi mang đầy trải nghiệm. Với Luxstay, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư... trở nên nhanh chóng, thuận tiện và dễ dàng.</p>
+                            <div class="content__download-wrapper">
+                                <div class="content__download-qr">
+                                    <img src="./assets/img/content_download/qr-code.png" alt="" class="content__download-qr-img">
+                                </div>
+                                <div class="content__download-link-wrapper">
+                                    <a href="#" class="content__download-link">
+                                        <img src="./assets/img/content_download/apple.png" alt="" class="content__download-img">
+                                    </a>
+                                    <a href="#" class="content__download-link">
+                                        <img src="./assets/img/content_download/appgalery.png" alt="" class="content__download-img">
+                                    </a>
+                                    <a href="#" class="content__download-link">
+                                        <img src="./assets/img/content_download/chplay.png" alt="" class="content__download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-1-2">
+                            <img src="./assets/img/content_download/download-intro.png" alt="" class="content__download-intro-img">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- grid__row END-->
+        </div> <!-- grid END-->
+    </div> <!-- content END-->
+
+    <div id="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-1-5">
+                    <img src="./assets/img/content_download/download_logo.png" alt="" class="footer__logo-img">
+                    <div class="footer__contact">
+                        <div class="footer__contact-item">
+                            <img src="./assets/img/footer/footer_message.png" alt="" class="footer__contact-img">
+                            <div class="footer__contact-info">
+                                <h3 class="footer__contact-name">Messenger</h3>
+                                <a href="#" class="footer__contact-link">http://m.me/luxstay</a>
+                            </div>
+                        </div>
+                        <div class="footer__contact-item">
+                            <img src="./assets/img/footer/footer_call.png" alt="" class="footer__contact-img">
+                            <div class="footer__contact-info">
+                                <h3 class="footer__contact-name">Call center</h3>
+                                <a href="#" class="footer__contact-link">18006586 (Việt Nam)</a>
+                                <a href="#" class="footer__contact-link">0889866666</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__column-1-5">
+                        <h3 class="footer__item-heading">
+                            Top Homestay được yêu thích
+                        </h3>
+                        <ul class="footer__item-list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Đà Lạt</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Hà Nội</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Hồ Chí Minh</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Sapa</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Tam Đảo</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Hội An</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Đà Nẵng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Hạ Long</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Phan Thiết</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Homestay Đà Lạt</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="grid__column-1-5">
+                    <h3 class="footer__item-heading">
+                        Không gian ưa thích
+                    </h3>
+                    <ul class="footer__item-list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Căn hộ dịch vụ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Biệt thự</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Nhà riêng</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Studio</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Travel Guide</a>
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="grid__column-1-5">
+                    <h3 class="footer__item-heading">
+                        Về chúng tôi
+                    </h3>
+                    <ul class="footer__item-list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Blog</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Điều khoản hoạt động</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">1800 6586</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">+84 8898 66666</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">info@luxstay.com</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Trang thông tin dành cho chủ nhà</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Cơ hội nghề nghiệp</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Tạp chí du lịch</a>
+                        </li>
+                    </ul>
+                </div> 
+
+                <div class="grid__column-1-5">
+                    <h3 class="footer__item-heading">
+                        Tải ứng dụng Luxstay
+                    </h3>
+                    <div class="footer__download-wrapper">
+                        <div class="footer__download-item">
+                                <img src="./assets/img/content_download/qr-code.png" alt="" class="footer__download-qr-img">
+                        </div>
+                        <div class="footer__download-item">
+                            <div class="footer__download-link-wrapper">
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/content_download/apple.png" alt="" class="footer__download-img">
+                                </a>
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/content_download/appgalery.png" alt="" class="footer__download-img">
+                                </a>
+                                <a href="#" class="footer__download-link">
+                                    <img src="./assets/img/content_download/chplay.png" alt="" class="footer__download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- grid__row END-->
+            <div class="grid__row m-t-40">
+                <div class="grid__column-1-2-4 m-l-20-p">
+                    <h3 class="footer__item-heading">
+                        Secure your transaction 
+                    </h3>
+                    <div class="footer__link-wrapper">
+                        <img src="./assets/img/footer/visa.svg" alt="" class="footer__transaction-img">
+                        <img src="./assets/img/footer/mastercard.svg" alt="" class="footer__transaction-img">
+                        <img src="./assets/img/footer/maestro.svg" alt="" class="footer__transaction-img">
+                    </div>
+                </div>
+                <div class="grid__column-1-5">
+                    <h3 class="footer__item-heading">
+                        Certification
+                    </h3>
+                    <div class="footer__link-wrapper">
+                        <a href="#" class="footer__certification-link">
+                            <img src="./assets/img/footer/bct.png" alt="" class="footer__certification-img">
+                        </a>
+                        <a href="#" class="footer__certification-link">
+                            <img src="./assets/img/footer/dmca.png" alt="" class="footer__certification-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid__column-1-5">
+                    <h3 class="footer__item-heading">
+                        Follow us
+                    </h3>
+                    <div class="footer__link-wrapper">
+                        <a href="#" class="footer__follow-link">
+                            <i class="footer__follow-icon fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer__follow-link">
+                            <i class="footer__follow-icon fab fa-youtube-square"></i>
+                        </a>
+                        <a href="#" class="footer__follow-link">
+                            <i class="footer__follow-icon fab fa-instagram-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- grid END-->
+    </div> <!-- Footer END-->
+
+    <script>
+        const booking_open_btn = document.querySelector('.header__booking-title')
+        const booking_hide_btn = document.querySelector('.booking-btn--hide')
+
+        const guestInfo_open_btn = document.querySelector('.header__guestInfo')
+        const guestInfo_hide_btn = document.querySelector('.guestInfo-btn--hide')
+        const guestInfo_modal = document.querySelector('.guestInfo-wrap')
+        
+        booking_open_btn.addEventListener('click',function(){
+            booking_open_btn.classList.add('display')
+        })
+
+        booking_hide_btn.addEventListener('click',function(){
+            booking_open_btn.classList.remove('display')
+        })
+
+        guestInfo_open_btn.addEventListener('click',function(){
+            if(guestInfo_open_btn.classList.contains('display'))
+                guestInfo_open_btn.classList.remove('display')
+            guestInfo_open_btn.classList.add('display')
+        })
+    </script>
+</body>
+</html>
